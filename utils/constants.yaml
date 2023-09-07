@@ -1,0 +1,61 @@
+DATA_PATH: data/census.csv
+CLEANED_DATA_PATH: data/cleaned_census.csv
+LOG_PATH: log/log
+LE_PATH: model/label_encoder_dict.pkl
+SAVED_MODEL_PATH: model/model.joblib 
+
+WORKCLASS_MAPPING:
+  Never-worked: Without-pay
+  State-gov: Gov
+  Local-gov: Gov
+  Self-emp-not-inc: Without-pay
+
+EDUCATION_MAPPING:
+  11th: School
+  10th: School
+  7th-8th: School
+  9th: School
+  12th: School
+  5th-6th: School
+  1st-4th: School
+  Preschool: School
+  HS-grad: College
+  Some-college: College
+  Prof-school: Doctorate
+  Doctorate: Doctorate
+  Assoc-voc: Assoc
+  Assoc-acdm: Assoc
+
+MARTIAL_MAPPING:
+  Divorced: No spouse
+  Married-spouse-absent: No spouse
+  Separated: No spouse 
+  Widowed: No spouse
+  Married-AF-Spouse: No spouse
+
+RELATIONSHIP_MAPPING:
+  Not-in-family: Other
+  Own-child: Other
+  Unmarried: Other
+  Other-relative: Other
+
+RACE_MAPPING:
+  Amer-Indian-Eskimo: Others
+  Other: Others
+
+MODEL_PARAMS:
+  learning_rate: 0.1
+  max_depth: 5
+  min_samples_leaf: 2
+  min_samples_split: 2
+  n_estimators: 100
+
+CAT_FEATURES:
+- workclass
+- education
+- marital-status
+- occupation
+- relationship
+- race
+- sex
+- native-country
