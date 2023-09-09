@@ -1,7 +1,8 @@
 DATA_PATH: data/census.csv
 CLEANED_DATA_PATH: data/cleaned_census.csv
 LOG_PATH: log/log
-LE_PATH: model/label_encoder_dict.pkl
+LE_PATH: model/label_encoder_dict.joblib
+SCALER_PATH: model/std_scaler.bin
 SAVED_MODEL_PATH: model/model.joblib 
 
 WORKCLASS_MAPPING:
@@ -59,3 +60,4 @@ CAT_FEATURES:
 - race
 - sex
 - native-country
+- salary

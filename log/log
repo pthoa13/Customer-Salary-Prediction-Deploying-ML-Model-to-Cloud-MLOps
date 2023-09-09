@@ -1,412 +1,422 @@
-2023-09-07 22:48:19,468 - root - INFO - SUCCESS: Data successfully imported
-2023-09-07 22:48:19,654 - root - INFO - SUCCESS: Save Clean Data
-2023-09-07 22:48:19,704 - root - INFO - SUCCESS: Data was splitted successfully
-2023-09-07 22:48:22,382 - root - INFO - SUCCESS: trained model
-2023-09-07 22:48:22,385 - root - INFO - SUCCESS: Saved model
-2023-09-07 22:48:22,400 - root - INFO - SUCCESS: Inference successfully
-2023-09-07 22:48:22,406 - root - INFO - SUCCESS: Model scoring computed.
-												Accuracy: 0.8701085843064946
-												Precision: 0.7820177731312076
+2023-09-09 11:19:07,673 - root - INFO - SUCCESS: Data successfully imported
+2023-09-09 11:19:07,850 - root - INFO - SUCCESS: Save Clean Data
+2023-09-09 11:19:07,891 - root - INFO - SUCCESS: Data was splitted successfully
+2023-09-09 11:19:10,553 - root - INFO - SUCCESS: trained model
+2023-09-09 11:19:10,556 - root - INFO - SUCCESS: Saved model
+2023-09-09 11:19:10,570 - root - INFO - SUCCESS: Inference successfully
+2023-09-09 11:19:10,577 - root - INFO - SUCCESS: Model scoring computed.
+												Accuracy: 0.8699037082565048
+												Precision: 0.781201044386423
 												Recall: 0.6374094588836813
-												FBeta: 0.7023474178403756
-2023-09-07 22:48:22,406 - root - INFO - SUCCESS: Model slicing computing.
-2023-09-07 22:48:22,425 - root - INFO - SUCCESS: Model slicing workclass -> Gov scoring computed.
-												Accuracy: 0.832202890002949
-												Precision: 0.8218298555377207
-												Recall: 0.5278350515463918
-												FBeta: 0.642812303829253
-2023-09-07 22:48:22,440 - root - INFO - SUCCESS: Model slicing workclass -> Without-pay scoring computed.
-												Accuracy: 0.7922686450605232
-												Precision: 0.6791044776119403
-												Recall: 0.5027624309392266
-												FBeta: 0.5777777777777777
-2023-09-07 22:48:22,519 - root - INFO - SUCCESS: Model slicing workclass -> Private scoring computed.
-												Accuracy: 0.8759639316169571
-												Precision: 0.7487046632124352
-												Recall: 0.6170419254658385
-												FBeta: 0.6765269206214087
-2023-09-07 22:48:22,529 - root - INFO - SUCCESS: Model slicing workclass -> Federal-gov scoring computed.
-												Accuracy: 0.7385416666666667
-												Precision: 0.8529411764705882
-												Recall: 0.3908355795148248
-												FBeta: 0.5360443622920518
-2023-09-07 22:48:22,538 - root - INFO - SUCCESS: Model slicing workclass -> Self-emp-inc scoring computed.
-												Accuracy: 0.5663082437275986
-												Precision: 0.8165137614678899
-												Recall: 0.2861736334405145
-												FBeta: 0.42380952380952386
-2023-09-07 22:48:22,561 - root - INFO - SUCCESS: Model slicing education -> Bachelors scoring computed.
-												Accuracy: 0.6669157481785914
-												Precision: 0.8201754385964912
-												Recall: 0.25258892390814947
-												FBeta: 0.3862306368330464
-2023-09-07 22:48:22,619 - root - INFO - SUCCESS: Model slicing education -> College scoring computed.
-												Accuracy: 0.8435531053105311
-												Precision: 0.555379118697896
-												Recall: 0.4571895424836601
-												FBeta: 0.5015235705323535
-2023-09-07 22:48:22,639 - root - INFO - SUCCESS: Model slicing education -> School scoring computed.
-												Accuracy: 0.9124293785310734
-												Precision: 0.2961783439490446
-												Recall: 0.38114754098360654
-												FBeta: 0.3333333333333333
-2023-09-07 22:48:22,650 - root - INFO - SUCCESS: Model slicing education -> Masters scoring computed.
-												Accuracy: 0.49361207897793263
-												Precision: 0.8990825688073395
-												Recall: 0.10218978102189781
-												FBeta: 0.18352059925093633
-2023-09-07 22:48:22,663 - root - INFO - SUCCESS: Model slicing education -> Assoc scoring computed.
-												Accuracy: 0.8089015924867293
-												Precision: 0.6740088105726872
-												Recall: 0.48881789137380194
-												FBeta: 0.5666666666666667
-2023-09-07 22:48:22,672 - root - INFO - SUCCESS: Model slicing education -> Doctorate scoring computed.
-												Accuracy: 0.30940343781597573
-												Precision: 0.8194444444444444
-												Recall: 0.08093278463648834
-												FBeta: 0.14731585518102375
-2023-09-07 22:48:22,708 - root - INFO - SUCCESS: Model slicing marital-status -> Never-married scoring computed.
-												Accuracy: 0.958657541951814
-												Precision: 0.5631313131313131
-												Recall: 0.45417515274949083
-												FBeta: 0.5028184892897407
-2023-09-07 22:48:22,758 - root - INFO - SUCCESS: Model slicing marital-status -> Married-civ-spouse scoring computed.
-												Accuracy: 0.5905143620574482
-												Precision: 0.9444444444444444
-												Recall: 0.08893871449925261
-												FBeta: 0.16256830601092898
-2023-09-07 22:48:22,783 - root - INFO - SUCCESS: Model slicing marital-status -> No spouse scoring computed.
-												Accuracy: 0.9291842373127818
-												Precision: 0.7476923076923077
-												Recall: 0.375
-												FBeta: 0.4994861253854059
-2023-09-07 22:48:22,789 - root - INFO - SUCCESS: Model slicing marital-status -> Married-AF-spouse scoring computed.
-												Accuracy: 0.6086956521739131
-												Precision: 1.0
-												Recall: 0.1
-												FBeta: 0.18181818181818182
-2023-09-07 22:48:22,806 - root - INFO - SUCCESS: Model slicing occupation -> Adm-clerical scoring computed.
-												Accuracy: 0.8872080679405521
-												Precision: 0.6305732484076433
-												Recall: 0.3905325443786982
-												FBeta: 0.48233861144945195
-2023-09-07 22:48:22,825 - root - INFO - SUCCESS: Model slicing occupation -> Exec-managerial scoring computed.
-												Accuracy: 0.5638376383763838
-												Precision: 0.9411764705882353
-												Recall: 0.10569105691056911
-												FBeta: 0.19004111466423024
-2023-09-07 22:48:22,835 - root - INFO - SUCCESS: Model slicing occupation -> Handlers-cleaners scoring computed.
-												Accuracy: 0.9152666179693206
-												Precision: 0.32558139534883723
-												Recall: 0.32558139534883723
-												FBeta: 0.32558139534883723
-2023-09-07 22:48:22,853 - root - INFO - SUCCESS: Model slicing occupation -> Prof-specialty scoring computed.
-												Accuracy: 0.6058994197292069
-												Precision: 0.9100719424460432
-												Recall: 0.13616792249730894
-												FBeta: 0.23689138576779026
-2023-09-07 22:48:22,869 - root - INFO - SUCCESS: Model slicing occupation -> Other-service scoring computed.
-												Accuracy: 0.9443938012762079
-												Precision: 0.35064935064935066
-												Recall: 0.39416058394160586
-												FBeta: 0.3711340206185567
-2023-09-07 22:48:22,885 - root - INFO - SUCCESS: Model slicing occupation -> Sales scoring computed.
-												Accuracy: 0.8252054794520548
-												Precision: 0.8741865509761388
-												Recall: 0.40996948118006105
-												FBeta: 0.5581717451523547
-2023-09-07 22:48:22,903 - root - INFO - SUCCESS: Model slicing occupation -> Craft-repair scoring computed.
-												Accuracy: 0.8155837811431363
-												Precision: 0.7313829787234043
-												Recall: 0.2960172228202368
-												FBeta: 0.42145593869731807
-2023-09-07 22:48:22,913 - root - INFO - SUCCESS: Model slicing occupation -> Transport-moving scoring computed.
-												Accuracy: 0.8271759549154665
-												Precision: 0.680327868852459
-												Recall: 0.259375
-												FBeta: 0.37556561085972856
-2023-09-07 22:48:22,922 - root - INFO - SUCCESS: Model slicing occupation -> Farming-fishing scoring computed.
-												Accuracy: 0.8961693548387096
-												Precision: 0.5666666666666667
-												Recall: 0.4434782608695652
-												FBeta: 0.49756097560975615
-2023-09-07 22:48:22,933 - root - INFO - SUCCESS: Model slicing occupation -> Machine-op-inspct scoring computed.
-												Accuracy: 0.874
-												Precision: 0.48760330578512395
-												Recall: 0.23694779116465864
-												FBeta: 0.31891891891891894
-2023-09-07 22:48:22,941 - root - INFO - SUCCESS: Model slicing occupation -> Tech-support scoring computed.
-												Accuracy: 0.7777777777777778
-												Precision: 0.8598130841121495
-												Recall: 0.3250883392226148
-												FBeta: 0.47179487179487173
-2023-09-07 22:48:22,952 - root - INFO - SUCCESS: Model slicing occupation -> Prof-speciality scoring computed.
-												Accuracy: 0.9148128052088985
-												Precision: 0.6231884057971014
-												Recall: 0.450261780104712
-												FBeta: 0.5227963525835866
-2023-09-07 22:48:22,960 - root - INFO - SUCCESS: Model slicing occupation -> Protective-serv scoring computed.
-												Accuracy: 0.7411402157164869
-												Precision: 0.7471264367816092
-												Recall: 0.3080568720379147
-												FBeta: 0.43624161073825507
-2023-09-07 22:48:22,965 - root - INFO - SUCCESS: Model slicing occupation -> Armed-Forces scoring computed.
-												Accuracy: 0.8888888888888888
-												Precision: 1.0
-												Recall: 0.0
-												FBeta: 0.0
-2023-09-07 22:48:22,971 - root - INFO - SUCCESS: Model slicing occupation -> Priv-house-serv scoring computed.
-												Accuracy: 0.9251700680272109
-												Precision: 0.08333333333333333
-												Recall: 1.0
-												FBeta: 0.15384615384615385
-2023-09-07 22:48:23,032 - root - INFO - SUCCESS: Model slicing relationship -> Other scoring computed.
-												Accuracy: 0.8747047576200653
-												Precision: 0.2867587327376117
-												Recall: 0.599320882852292
-												FBeta: 0.38791208791208787
-2023-09-07 22:48:23,078 - root - INFO - SUCCESS: Model slicing relationship -> Husband scoring computed.
-												Accuracy: 0.585121710775764
-												Precision: 0.9476861167002012
-												Recall: 0.07961460446247465
-												FBeta: 0.14688913145173865
-2023-09-07 22:48:23,089 - root - INFO - SUCCESS: Model slicing relationship -> Wife scoring computed.
-												Accuracy: 0.5669642857142857
-												Precision: 0.9459459459459459
-												Recall: 0.09395973154362416
-												FBeta: 0.17094017094017094
-2023-09-07 22:48:23,181 - root - INFO - SUCCESS: Model slicing race -> White scoring computed.
-												Accuracy: 0.8623853211009175
-												Precision: 0.784996534996535
-												Recall: 0.6368236120871399
-												FBeta: 0.7031892604950726
-2023-09-07 22:48:23,196 - root - INFO - SUCCESS: Model slicing race -> Black scoring computed.
-												Accuracy: 0.9115951313260731
-												Precision: 0.6419437340153452
-												Recall: 0.648578811369509
-												FBeta: 0.6452442159383033
-2023-09-07 22:48:23,205 - root - INFO - SUCCESS: Model slicing race -> Asian-Pac-Islander scoring computed.
-												Accuracy: 0.8458574181117534
-												Precision: 0.7660550458715596
-												Recall: 0.605072463768116
-												FBeta: 0.6761133603238867
-2023-09-07 22:48:23,213 - root - INFO - SUCCESS: Model slicing race -> Others scoring computed.
-												Accuracy: 0.9106529209621993
-												Precision: 0.5692307692307692
-												Recall: 0.6065573770491803
-												FBeta: 0.5873015873015873
-2023-09-07 22:48:23,285 - root - INFO - SUCCESS: Model slicing sex -> Male scoring computed.
-												Accuracy: 0.8274626865671642
-												Precision: 0.7864614170120386
-												Recall: 0.5983483483483484
-												FBeta: 0.6796282084079475
-2023-09-07 22:48:23,323 - root - INFO - SUCCESS: Model slicing sex -> Female scoring computed.
-												Accuracy: 0.8584835532428916
-												Precision: 0.4127789046653144
-												Recall: 0.6904156064461408
-												FBeta: 0.5166613773405269
-2023-09-07 22:48:23,421 - root - INFO - SUCCESS: Model slicing native-country -> United-States scoring computed.
-												Accuracy: 0.8742222969564486
-												Precision: 0.7947238252267106
-												Recall: 0.65892002734108
-												FBeta: 0.7204783258594918
-2023-09-07 22:48:23,427 - root - INFO - SUCCESS: Model slicing native-country -> Cuba scoring computed.
-												Accuracy: 0.8105263157894737
-												Precision: 0.7058823529411765
-												Recall: 0.48
-												FBeta: 0.5714285714285713
-2023-09-07 22:48:23,433 - root - INFO - SUCCESS: Model slicing native-country -> Jamaica scoring computed.
-												Accuracy: 0.9135802469135802
-												Precision: 0.7142857142857143
-												Recall: 0.5
-												FBeta: 0.588235294117647
-2023-09-07 22:48:23,438 - root - INFO - SUCCESS: Model slicing native-country -> India scoring computed.
-												Accuracy: 0.64
-												Precision: 0.75
-												Recall: 0.15
-												FBeta: 0.24999999999999997
-2023-09-07 22:48:23,445 - root - INFO - SUCCESS: Model slicing native-country -> Mexico scoring computed.
-												Accuracy: 0.918622848200313
-												Precision: 0.3137254901960784
-												Recall: 0.48484848484848486
-												FBeta: 0.380952380952381
-2023-09-07 22:48:23,451 - root - INFO - SUCCESS: Model slicing native-country -> South scoring computed.
-												Accuracy: 0.8
-												Precision: 0.5
-												Recall: 0.4375
-												FBeta: 0.4666666666666667
-2023-09-07 22:48:23,456 - root - INFO - SUCCESS: Model slicing native-country -> Puerto-Rico scoring computed.
-												Accuracy: 0.9210526315789473
-												Precision: 0.5882352941176471
-												Recall: 0.8333333333333334
-												FBeta: 0.6896551724137931
-2023-09-07 22:48:23,461 - root - INFO - SUCCESS: Model slicing native-country -> Honduras scoring computed.
-												Accuracy: 0.9230769230769231
-												Precision: 1.0
-												Recall: 0.0
-												FBeta: 0.0
-2023-09-07 22:48:23,466 - root - INFO - SUCCESS: Model slicing native-country -> England scoring computed.
-												Accuracy: 0.7888888888888889
-												Precision: 0.8235294117647058
-												Recall: 0.4666666666666667
-												FBeta: 0.5957446808510638
-2023-09-07 22:48:23,472 - root - INFO - SUCCESS: Model slicing native-country -> Canada scoring computed.
-												Accuracy: 0.7355371900826446
-												Precision: 0.7058823529411765
-												Recall: 0.3076923076923077
-												FBeta: 0.42857142857142866
-2023-09-07 22:48:23,477 - root - INFO - SUCCESS: Model slicing native-country -> Germany scoring computed.
-												Accuracy: 0.8102189781021898
-												Precision: 0.875
-												Recall: 0.4772727272727273
-												FBeta: 0.6176470588235294
-2023-09-07 22:48:23,483 - root - INFO - SUCCESS: Model slicing native-country -> Iran scoring computed.
-												Accuracy: 0.6046511627906976
-												Precision: 0.6666666666666666
-												Recall: 0.1111111111111111
-												FBeta: 0.1904761904761905
-2023-09-07 22:48:23,488 - root - INFO - SUCCESS: Model slicing native-country -> Philippines scoring computed.
-												Accuracy: 0.8131313131313131
-												Precision: 0.8
-												Recall: 0.5245901639344263
-												FBeta: 0.6336633663366338
-2023-09-07 22:48:23,494 - root - INFO - SUCCESS: Model slicing native-country -> Italy scoring computed.
-												Accuracy: 0.863013698630137
-												Precision: 0.8947368421052632
-												Recall: 0.68
-												FBeta: 0.7727272727272727
-2023-09-07 22:48:23,499 - root - INFO - SUCCESS: Model slicing native-country -> Poland scoring computed.
-												Accuracy: 0.8833333333333333
-												Precision: 0.7272727272727273
-												Recall: 0.6666666666666666
-												FBeta: 0.6956521739130435
-2023-09-07 22:48:23,504 - root - INFO - SUCCESS: Model slicing native-country -> Columbia scoring computed.
-												Accuracy: 0.9152542372881356
-												Precision: 0.2857142857142857
-												Recall: 1.0
-												FBeta: 0.4444444444444445
-2023-09-07 22:48:23,509 - root - INFO - SUCCESS: Model slicing native-country -> Cambodia scoring computed.
-												Accuracy: 0.631578947368421
-												Precision: 1.0
-												Recall: 0.0
-												FBeta: 0.0
-2023-09-07 22:48:23,514 - root - INFO - SUCCESS: Model slicing native-country -> Thailand scoring computed.
-												Accuracy: 0.8333333333333334
-												Precision: 1.0
-												Recall: 0.0
-												FBeta: 0.0
-2023-09-07 22:48:23,519 - root - INFO - SUCCESS: Model slicing native-country -> Ecuador scoring computed.
-												Accuracy: 0.8214285714285714
-												Precision: 0.4
-												Recall: 0.5
-												FBeta: 0.4444444444444445
-2023-09-07 22:48:23,524 - root - INFO - SUCCESS: Model slicing native-country -> Laos scoring computed.
-												Accuracy: 0.8888888888888888
-												Precision: 0.5
-												Recall: 0.5
-												FBeta: 0.5
-2023-09-07 22:48:23,529 - root - INFO - SUCCESS: Model slicing native-country -> Taiwan scoring computed.
-												Accuracy: 0.7058823529411765
+												FBeta: 0.7020178320037541
+2023-09-09 11:19:10,577 - root - INFO - SUCCESS: Model slicing computing.
+2023-09-09 11:19:10,593 - root - INFO - SUCCESS: Model slicing workclass -> Gov scoring computed.
+												Accuracy: 0.8696549690356827
+												Precision: 0.7773109243697479
+												Recall: 0.7628865979381443
+												FBeta: 0.7700312174817899
+2023-09-09 11:19:10,607 - root - INFO - SUCCESS: Model slicing workclass -> Without-pay scoring computed.
+												Accuracy: 0.8500585708707536
+												Precision: 0.8281853281853282
+												Recall: 0.5925414364640884
+												FBeta: 0.6908212560386474
+2023-09-09 11:19:10,680 - root - INFO - SUCCESS: Model slicing workclass -> Private scoring computed.
+												Accuracy: 0.8919988575625281
+												Precision: 0.8060102614219399
+												Recall: 0.640333850931677
+												FBeta: 0.7136830719307733
+2023-09-09 11:19:10,689 - root - INFO - SUCCESS: Model slicing workclass -> Federal-gov scoring computed.
+												Accuracy: 0.853125
+												Precision: 0.8091397849462365
+												Recall: 0.8113207547169812
+												FBeta: 0.8102288021534321
+2023-09-09 11:19:10,699 - root - INFO - SUCCESS: Model slicing workclass -> Self-emp-inc scoring computed.
+												Accuracy: 0.8046594982078853
+												Precision: 0.827922077922078
+												Recall: 0.819935691318328
+												FBeta: 0.8239095315024233
+2023-09-09 11:19:10,728 - root - INFO - SUCCESS: Model slicing education -> Bachelors scoring computed.
+												Accuracy: 0.835979824397534
+												Precision: 0.7841726618705036
+												Recall: 0.8343088698784331
+												FBeta: 0.8084642233856892
+2023-09-09 11:19:10,808 - root - INFO - SUCCESS: Model slicing education -> College scoring computed.
+												Accuracy: 0.8864198919891989
+												Precision: 0.7855183763027976
+												Recall: 0.46797385620915033
+												FBeta: 0.5865246774523859
+2023-09-09 11:19:10,824 - root - INFO - SUCCESS: Model slicing education -> School scoring computed.
+												Accuracy: 0.9592749529190208
+												Precision: 0.9176470588235294
+												Recall: 0.319672131147541
+												FBeta: 0.4741641337386019
+2023-09-09 11:19:10,835 - root - INFO - SUCCESS: Model slicing education -> Masters scoring computed.
+												Accuracy: 0.8362369337979094
+												Precision: 0.8334975369458129
+												Recall: 0.8821689259645464
+												FBeta: 0.8571428571428572
+2023-09-09 11:19:10,846 - root - INFO - SUCCESS: Model slicing education -> Assoc scoring computed.
+												Accuracy: 0.8595345038791343
+												Precision: 0.7865853658536586
+												Recall: 0.6182108626198083
+												FBeta: 0.6923076923076922
+2023-09-09 11:19:10,854 - root - INFO - SUCCESS: Model slicing education -> Doctorate scoring computed.
+												Accuracy: 0.8624873609706775
+												Precision: 0.8835705045278137
+												Recall: 0.9368998628257887
+												FBeta: 0.9094540612516644
+2023-09-09 11:19:10,884 - root - INFO - SUCCESS: Model slicing marital-status -> Never-married scoring computed.
+												Accuracy: 0.9730008437236336
+												Precision: 0.9109311740890689
+												Recall: 0.45824847250509165
+												FBeta: 0.6097560975609756
+2023-09-09 11:19:10,929 - root - INFO - SUCCESS: Model slicing marital-status -> Married-civ-spouse scoring computed.
+												Accuracy: 0.7901803607214429
+												Precision: 0.7952087838961903
+												Recall: 0.7144992526158446
+												FBeta: 0.7526966380599952
+2023-09-09 11:19:10,950 - root - INFO - SUCCESS: Model slicing marital-status -> No spouse scoring computed.
+												Accuracy: 0.9421259270030536
+												Precision: 0.9401408450704225
+												Recall: 0.41203703703703703
+												FBeta: 0.572961373390558
+2023-09-09 11:19:10,955 - root - INFO - SUCCESS: Model slicing marital-status -> Married-AF-spouse scoring computed.
+												Accuracy: 0.782608695652174
 												Precision: 0.7777777777777778
-												Recall: 0.35
-												FBeta: 0.48275862068965514
-2023-09-07 22:48:23,535 - root - INFO - SUCCESS: Model slicing native-country -> Haiti scoring computed.
-												Accuracy: 0.9318181818181818
-												Precision: 1.0
-												Recall: 0.25
-												FBeta: 0.4
-2023-09-07 22:48:23,540 - root - INFO - SUCCESS: Model slicing native-country -> Portugal scoring computed.
-												Accuracy: 0.8378378378378378
-												Precision: 0.3333333333333333
-												Recall: 0.5
-												FBeta: 0.4
-2023-09-07 22:48:23,545 - root - INFO - SUCCESS: Model slicing native-country -> Dominican-Republic scoring computed.
-												Accuracy: 0.9571428571428572
-												Precision: 0.4
-												Recall: 1.0
-												FBeta: 0.5714285714285715
-2023-09-07 22:48:23,550 - root - INFO - SUCCESS: Model slicing native-country -> El-Salvador scoring computed.
-												Accuracy: 0.9339622641509434
-												Precision: 0.5625
-												Recall: 1.0
-												FBeta: 0.72
-2023-09-07 22:48:23,555 - root - INFO - SUCCESS: Model slicing native-country -> France scoring computed.
-												Accuracy: 0.6551724137931034
-												Precision: 0.75
-												Recall: 0.25
-												FBeta: 0.375
-2023-09-07 22:48:23,560 - root - INFO - SUCCESS: Model slicing native-country -> Guatemala scoring computed.
-												Accuracy: 0.8709677419354839
-												Precision: 0.14285714285714285
-												Recall: 0.3333333333333333
-												FBeta: 0.2
-2023-09-07 22:48:23,566 - root - INFO - SUCCESS: Model slicing native-country -> China scoring computed.
-												Accuracy: 0.8133333333333334
-												Precision: 0.75
-												Recall: 0.45
-												FBeta: 0.5625000000000001
-2023-09-07 22:48:23,571 - root - INFO - SUCCESS: Model slicing native-country -> Japan scoring computed.
-												Accuracy: 0.6612903225806451
-												Precision: 0.8
-												Recall: 0.16666666666666666
-												FBeta: 0.27586206896551724
-2023-09-07 22:48:23,576 - root - INFO - SUCCESS: Model slicing native-country -> Yugoslavia scoring computed.
-												Accuracy: 0.6875
-												Precision: 0.6666666666666666
-												Recall: 0.3333333333333333
-												FBeta: 0.4444444444444444
-2023-09-07 22:48:23,581 - root - INFO - SUCCESS: Model slicing native-country -> Peru scoring computed.
-												Accuracy: 0.8387096774193549
-												Precision: 0.0
-												Recall: 0.0
-												FBeta: 1.0
-2023-09-07 22:48:23,586 - root - INFO - SUCCESS: Model slicing native-country -> Outlying-US(Guam-USVI-etc) scoring computed.
+												Recall: 0.7
+												FBeta: 0.7368421052631577
+2023-09-09 11:19:10,970 - root - INFO - SUCCESS: Model slicing occupation -> Adm-clerical scoring computed.
+												Accuracy: 0.9225053078556263
+												Precision: 0.7707808564231738
+												Recall: 0.6035502958579881
+												FBeta: 0.6769911504424778
+2023-09-09 11:19:10,986 - root - INFO - SUCCESS: Model slicing occupation -> Exec-managerial scoring computed.
+												Accuracy: 0.8285362853628536
+												Precision: 0.8163265306122449
+												Recall: 0.8333333333333334
+												FBeta: 0.8247422680412372
+2023-09-09 11:19:10,994 - root - INFO - SUCCESS: Model slicing occupation -> Handlers-cleaners scoring computed.
+												Accuracy: 0.9517896274653032
+												Precision: 0.8125
+												Recall: 0.3023255813953488
+												FBeta: 0.44067796610169485
+2023-09-09 11:19:11,011 - root - INFO - SUCCESS: Model slicing occupation -> Prof-specialty scoring computed.
+												Accuracy: 0.8426015473887815
+												Precision: 0.8171308460325801
+												Recall: 0.8369214208826695
+												FBeta: 0.8269077373039087
+2023-09-09 11:19:11,023 - root - INFO - SUCCESS: Model slicing occupation -> Other-service scoring computed.
+												Accuracy: 0.9665755089638408
+												Precision: 0.7755102040816326
+												Recall: 0.2773722627737226
+												FBeta: 0.40860215053763443
+2023-09-09 11:19:11,037 - root - INFO - SUCCESS: Model slicing occupation -> Sales scoring computed.
+												Accuracy: 0.8641095890410959
+												Precision: 0.7776510832383124
+												Recall: 0.6937945066124109
+												FBeta: 0.7333333333333332
+2023-09-09 11:19:11,052 - root - INFO - SUCCESS: Model slicing occupation -> Craft-repair scoring computed.
+												Accuracy: 0.8395212506106497
+												Precision: 0.7857142857142857
+												Recall: 0.4025834230355221
+												FBeta: 0.5323843416370108
+2023-09-09 11:19:11,061 - root - INFO - SUCCESS: Model slicing occupation -> Transport-moving scoring computed.
+												Accuracy: 0.8578584846587352
+												Precision: 0.8444444444444444
+												Recall: 0.35625
+												FBeta: 0.5010989010989011
+2023-09-09 11:19:11,069 - root - INFO - SUCCESS: Model slicing occupation -> Farming-fishing scoring computed.
+												Accuracy: 0.9203629032258065
+												Precision: 0.875
+												Recall: 0.3652173913043478
+												FBeta: 0.5153374233128833
+2023-09-09 11:19:11,078 - root - INFO - SUCCESS: Model slicing occupation -> Machine-op-inspct scoring computed.
+												Accuracy: 0.9085
+												Precision: 0.9125
+												Recall: 0.2931726907630522
+												FBeta: 0.4437689969604863
+2023-09-09 11:19:11,086 - root - INFO - SUCCESS: Model slicing occupation -> Tech-support scoring computed.
+												Accuracy: 0.8576051779935275
+												Precision: 0.8007968127490039
+												Recall: 0.7102473498233216
+												FBeta: 0.752808988764045
+2023-09-09 11:19:11,095 - root - INFO - SUCCESS: Model slicing occupation -> Prof-speciality scoring computed.
+												Accuracy: 0.9316332067281606
+												Precision: 0.7777777777777778
+												Recall: 0.47643979057591623
+												FBeta: 0.5909090909090909
+2023-09-09 11:19:11,102 - root - INFO - SUCCESS: Model slicing occupation -> Protective-serv scoring computed.
+												Accuracy: 0.8212634822804314
+												Precision: 0.7714285714285715
+												Recall: 0.6398104265402843
+												FBeta: 0.6994818652849741
+2023-09-09 11:19:11,106 - root - INFO - SUCCESS: Model slicing occupation -> Armed-Forces scoring computed.
 												Accuracy: 1.0
 												Precision: 1.0
 												Recall: 1.0
 												FBeta: 1.0
-2023-09-07 22:48:23,591 - root - INFO - SUCCESS: Model slicing native-country -> Scotland scoring computed.
-												Accuracy: 0.9166666666666666
+2023-09-09 11:19:11,112 - root - INFO - SUCCESS: Model slicing occupation -> Priv-house-serv scoring computed.
+												Accuracy: 1.0
+												Precision: 1.0
+												Recall: 1.0
+												FBeta: 1.0
+2023-09-09 11:19:11,159 - root - INFO - SUCCESS: Model slicing relationship -> Other scoring computed.
+												Accuracy: 0.9596220897536835
+												Precision: 0.9078014184397163
+												Recall: 0.43463497453310695
+												FBeta: 0.5878300803673938
+2023-09-09 11:19:11,200 - root - INFO - SUCCESS: Model slicing relationship -> Husband scoring computed.
+												Accuracy: 0.7896413134147267
+												Precision: 0.7970877458396369
+												Recall: 0.712474645030426
+												FBeta: 0.7524098536237059
+2023-09-09 11:19:11,210 - root - INFO - SUCCESS: Model slicing relationship -> Wife scoring computed.
+												Accuracy: 0.7831632653061225
+												Precision: 0.7896995708154506
+												Recall: 0.7409395973154362
+												FBeta: 0.7645429362880887
+2023-09-09 11:19:11,289 - root - INFO - SUCCESS: Model slicing race -> White scoring computed.
+												Accuracy: 0.8753732685734844
+												Precision: 0.8048088161629654
+												Recall: 0.6774420238931834
+												FBeta: 0.7356532356532357
+2023-09-09 11:19:11,303 - root - INFO - SUCCESS: Model slicing race -> Black scoring computed.
+												Accuracy: 0.935618193465727
+												Precision: 0.8206896551724138
+												Recall: 0.6149870801033591
+												FBeta: 0.7031019202363367
+2023-09-09 11:19:11,311 - root - INFO - SUCCESS: Model slicing race -> Asian-Pac-Islander scoring computed.
+												Accuracy: 0.8728323699421965
+												Precision: 0.8050847457627118
+												Recall: 0.6884057971014492
+												FBeta: 0.7421874999999999
+2023-09-09 11:19:11,317 - root - INFO - SUCCESS: Model slicing race -> Others scoring computed.
+												Accuracy: 0.9398625429553265
+												Precision: 0.8611111111111112
+												Recall: 0.5081967213114754
+												FBeta: 0.6391752577319588
+2023-09-09 11:19:11,382 - root - INFO - SUCCESS: Model slicing sex -> Male scoring computed.
+												Accuracy: 0.851572904707233
+												Precision: 0.8026129943502824
+												Recall: 0.6825825825825825
+												FBeta: 0.7377474845829275
+2023-09-09 11:19:11,414 - root - INFO - SUCCESS: Model slicing sex -> Female scoring computed.
+												Accuracy: 0.9442482809886639
+												Precision: 0.826381059751973
+												Recall: 0.6217133163698049
+												FBeta: 0.7095837366892545
+2023-09-09 11:19:11,499 - root - INFO - SUCCESS: Model slicing native-country -> United-States scoring computed.
+												Accuracy: 0.8793341180427106
+												Precision: 0.8044437183466754
+												Recall: 0.6731373889268626
+												FBeta: 0.7329562369752903
+2023-09-09 11:19:11,505 - root - INFO - SUCCESS: Model slicing native-country -> Cuba scoring computed.
+												Accuracy: 0.9052631578947369
+												Precision: 1.0
+												Recall: 0.64
+												FBeta: 0.7804878048780487
+2023-09-09 11:19:11,510 - root - INFO - SUCCESS: Model slicing native-country -> Jamaica scoring computed.
+												Accuracy: 0.8765432098765432
+												Precision: 0.5
+												Recall: 0.3
+												FBeta: 0.37499999999999994
+2023-09-09 11:19:11,514 - root - INFO - SUCCESS: Model slicing native-country -> India scoring computed.
+												Accuracy: 0.84
+												Precision: 0.7857142857142857
+												Recall: 0.825
+												FBeta: 0.8048780487804876
+2023-09-09 11:19:11,521 - root - INFO - SUCCESS: Model slicing native-country -> Mexico scoring computed.
+												Accuracy: 0.9687010954616588
+												Precision: 0.8823529411764706
+												Recall: 0.45454545454545453
+												FBeta: 0.6
+2023-09-09 11:19:11,526 - root - INFO - SUCCESS: Model slicing native-country -> South scoring computed.
+												Accuracy: 0.85
+												Precision: 0.6428571428571429
+												Recall: 0.5625
+												FBeta: 0.6000000000000001
+2023-09-09 11:19:11,530 - root - INFO - SUCCESS: Model slicing native-country -> Puerto-Rico scoring computed.
+												Accuracy: 0.9385964912280702
+												Precision: 0.6923076923076923
+												Recall: 0.75
+												FBeta: 0.7199999999999999
+2023-09-09 11:19:11,535 - root - INFO - SUCCESS: Model slicing native-country -> Honduras scoring computed.
+												Accuracy: 1.0
+												Precision: 1.0
+												Recall: 1.0
+												FBeta: 1.0
+2023-09-09 11:19:11,539 - root - INFO - SUCCESS: Model slicing native-country -> England scoring computed.
+												Accuracy: 0.8666666666666667
+												Precision: 0.8214285714285714
+												Recall: 0.7666666666666667
+												FBeta: 0.793103448275862
+2023-09-09 11:19:11,544 - root - INFO - SUCCESS: Model slicing native-country -> Canada scoring computed.
+												Accuracy: 0.859504132231405
+												Precision: 0.8055555555555556
+												Recall: 0.7435897435897436
+												FBeta: 0.7733333333333334
+2023-09-09 11:19:11,549 - root - INFO - SUCCESS: Model slicing native-country -> Germany scoring computed.
+												Accuracy: 0.8686131386861314
+												Precision: 0.8823529411764706
+												Recall: 0.6818181818181818
+												FBeta: 0.7692307692307693
+2023-09-09 11:19:11,554 - root - INFO - SUCCESS: Model slicing native-country -> Iran scoring computed.
+												Accuracy: 0.7906976744186046
+												Precision: 0.7368421052631579
+												Recall: 0.7777777777777778
+												FBeta: 0.7567567567567567
+2023-09-09 11:19:11,559 - root - INFO - SUCCESS: Model slicing native-country -> Philippines scoring computed.
+												Accuracy: 0.8737373737373737
+												Precision: 0.9285714285714286
+												Recall: 0.639344262295082
+												FBeta: 0.7572815533980584
+2023-09-09 11:19:11,563 - root - INFO - SUCCESS: Model slicing native-country -> Italy scoring computed.
+												Accuracy: 0.8356164383561644
+												Precision: 0.8823529411764706
+												Recall: 0.6
+												FBeta: 0.7142857142857143
+2023-09-09 11:19:11,568 - root - INFO - SUCCESS: Model slicing native-country -> Poland scoring computed.
+												Accuracy: 0.8666666666666667
+												Precision: 0.8333333333333334
+												Recall: 0.4166666666666667
+												FBeta: 0.5555555555555556
+2023-09-09 11:19:11,572 - root - INFO - SUCCESS: Model slicing native-country -> Columbia scoring computed.
+												Accuracy: 0.9661016949152542
+												Precision: 0.5
+												Recall: 1.0
+												FBeta: 0.6666666666666666
+2023-09-09 11:19:11,577 - root - INFO - SUCCESS: Model slicing native-country -> Cambodia scoring computed.
+												Accuracy: 0.7894736842105263
+												Precision: 1.0
+												Recall: 0.42857142857142855
+												FBeta: 0.6
+2023-09-09 11:19:11,581 - root - INFO - SUCCESS: Model slicing native-country -> Thailand scoring computed.
+												Accuracy: 0.9444444444444444
 												Precision: 1.0
 												Recall: 0.6666666666666666
 												FBeta: 0.8
-2023-09-07 22:48:23,597 - root - INFO - SUCCESS: Model slicing native-country -> Trinadad&Tobago scoring computed.
-												Accuracy: 0.8947368421052632
-												Precision: 1.0
-												Recall: 0.0
-												FBeta: 0.0
-2023-09-07 22:48:23,602 - root - INFO - SUCCESS: Model slicing native-country -> Greece scoring computed.
-												Accuracy: 0.7241379310344828
-												Precision: 0.5
-												Recall: 0.125
-												FBeta: 0.2
-2023-09-07 22:48:23,608 - root - INFO - SUCCESS: Model slicing native-country -> Nicaragua scoring computed.
-												Accuracy: 0.8823529411764706
-												Precision: 0.0
-												Recall: 0.0
-												FBeta: 1.0
-2023-09-07 22:48:23,613 - root - INFO - SUCCESS: Model slicing native-country -> Vietnam scoring computed.
-												Accuracy: 0.8656716417910447
-												Precision: 0.25
-												Recall: 0.4
-												FBeta: 0.3076923076923077
-2023-09-07 22:48:23,618 - root - INFO - SUCCESS: Model slicing native-country -> Hong scoring computed.
-												Accuracy: 0.8
-												Precision: 1.0
-												Recall: 0.3333333333333333
-												FBeta: 0.5
-2023-09-07 22:48:23,623 - root - INFO - SUCCESS: Model slicing native-country -> Ireland scoring computed.
-												Accuracy: 0.875
+2023-09-09 11:19:11,586 - root - INFO - SUCCESS: Model slicing native-country -> Ecuador scoring computed.
+												Accuracy: 0.9285714285714286
 												Precision: 0.75
-												Recall: 0.6
-												FBeta: 0.6666666666666665
-2023-09-07 22:48:23,628 - root - INFO - SUCCESS: Model slicing native-country -> Hungary scoring computed.
-												Accuracy: 0.8461538461538461
+												Recall: 0.75
+												FBeta: 0.75
+2023-09-09 11:19:11,590 - root - INFO - SUCCESS: Model slicing native-country -> Laos scoring computed.
+												Accuracy: 0.9444444444444444
+												Precision: 1.0
+												Recall: 0.5
+												FBeta: 0.6666666666666666
+2023-09-09 11:19:11,595 - root - INFO - SUCCESS: Model slicing native-country -> Taiwan scoring computed.
+												Accuracy: 0.8823529411764706
+												Precision: 0.85
+												Recall: 0.85
+												FBeta: 0.85
+2023-09-09 11:19:11,599 - root - INFO - SUCCESS: Model slicing native-country -> Haiti scoring computed.
+												Accuracy: 0.9545454545454546
+												Precision: 1.0
+												Recall: 0.5
+												FBeta: 0.6666666666666666
+2023-09-09 11:19:11,604 - root - INFO - SUCCESS: Model slicing native-country -> Portugal scoring computed.
+												Accuracy: 0.918918918918919
+												Precision: 1.0
+												Recall: 0.25
+												FBeta: 0.4
+2023-09-09 11:19:11,608 - root - INFO - SUCCESS: Model slicing native-country -> Dominican-Republic scoring computed.
+												Accuracy: 0.9857142857142858
+												Precision: 0.6666666666666666
+												Recall: 1.0
+												FBeta: 0.8
+2023-09-09 11:19:11,613 - root - INFO - SUCCESS: Model slicing native-country -> El-Salvador scoring computed.
+												Accuracy: 0.9905660377358491
+												Precision: 1.0
+												Recall: 0.8888888888888888
+												FBeta: 0.9411764705882353
+2023-09-09 11:19:11,617 - root - INFO - SUCCESS: Model slicing native-country -> France scoring computed.
+												Accuracy: 0.8275862068965517
+												Precision: 0.7692307692307693
+												Recall: 0.8333333333333334
+												FBeta: 0.8
+2023-09-09 11:19:11,622 - root - INFO - SUCCESS: Model slicing native-country -> Guatemala scoring computed.
+												Accuracy: 0.967741935483871
 												Precision: 1.0
 												Recall: 0.3333333333333333
 												FBeta: 0.5
-2023-09-07 22:48:23,633 - root - INFO - SUCCESS: Model slicing native-country -> Holand-Netherlands scoring computed.
+2023-09-09 11:19:11,627 - root - INFO - SUCCESS: Model slicing native-country -> China scoring computed.
+												Accuracy: 0.92
+												Precision: 0.8181818181818182
+												Recall: 0.9
+												FBeta: 0.8571428571428572
+2023-09-09 11:19:11,632 - root - INFO - SUCCESS: Model slicing native-country -> Japan scoring computed.
+												Accuracy: 0.8387096774193549
+												Precision: 0.8181818181818182
+												Recall: 0.75
+												FBeta: 0.7826086956521738
+2023-09-09 11:19:11,637 - root - INFO - SUCCESS: Model slicing native-country -> Yugoslavia scoring computed.
+												Accuracy: 0.6875
+												Precision: 0.6
+												Recall: 0.5
+												FBeta: 0.5454545454545454
+2023-09-09 11:19:11,641 - root - INFO - SUCCESS: Model slicing native-country -> Peru scoring computed.
+												Accuracy: 0.967741935483871
+												Precision: 1.0
+												Recall: 0.5
+												FBeta: 0.6666666666666666
+2023-09-09 11:19:11,646 - root - INFO - SUCCESS: Model slicing native-country -> Outlying-US(Guam-USVI-etc) scoring computed.
 												Accuracy: 1.0
 												Precision: 1.0
 												Recall: 1.0
 												FBeta: 1.0
+2023-09-09 11:19:11,650 - root - INFO - SUCCESS: Model slicing native-country -> Scotland scoring computed.
+												Accuracy: 1.0
+												Precision: 1.0
+												Recall: 1.0
+												FBeta: 1.0
+2023-09-09 11:19:11,654 - root - INFO - SUCCESS: Model slicing native-country -> Trinadad&Tobago scoring computed.
+												Accuracy: 0.8947368421052632
+												Precision: 0.5
+												Recall: 0.5
+												FBeta: 0.5
+2023-09-09 11:19:11,659 - root - INFO - SUCCESS: Model slicing native-country -> Greece scoring computed.
+												Accuracy: 0.896551724137931
+												Precision: 0.7777777777777778
+												Recall: 0.875
+												FBeta: 0.823529411764706
+2023-09-09 11:19:11,663 - root - INFO - SUCCESS: Model slicing native-country -> Nicaragua scoring computed.
+												Accuracy: 0.9705882352941176
+												Precision: 1.0
+												Recall: 0.5
+												FBeta: 0.6666666666666666
+2023-09-09 11:19:11,668 - root - INFO - SUCCESS: Model slicing native-country -> Vietnam scoring computed.
+												Accuracy: 0.9552238805970149
+												Precision: 1.0
+												Recall: 0.4
+												FBeta: 0.5714285714285715
+2023-09-09 11:19:11,672 - root - INFO - SUCCESS: Model slicing native-country -> Hong scoring computed.
+												Accuracy: 0.8
+												Precision: 0.75
+												Recall: 0.5
+												FBeta: 0.6
+2023-09-09 11:19:11,677 - root - INFO - SUCCESS: Model slicing native-country -> Ireland scoring computed.
+												Accuracy: 0.9166666666666666
+												Precision: 1.0
+												Recall: 0.6
+												FBeta: 0.7499999999999999
+2023-09-09 11:19:11,681 - root - INFO - SUCCESS: Model slicing native-country -> Hungary scoring computed.
+												Accuracy: 0.8461538461538461
+												Precision: 0.6666666666666666
+												Recall: 0.6666666666666666
+												FBeta: 0.6666666666666666
+2023-09-09 11:19:11,686 - root - INFO - SUCCESS: Model slicing native-country -> Holand-Netherlands scoring computed.
+												Accuracy: 1.0
+												Precision: 1.0
+												Recall: 1.0
+												FBeta: 1.0
+2023-09-09 11:19:11,752 - root - INFO - SUCCESS: Model slicing salary -> <=50K scoring computed.
+												Accuracy: 0.9484978540772532
+												Precision: 0.0
+												Recall: 1.0
+												FBeta: 0.0
+2023-09-09 11:19:11,779 - root - INFO - SUCCESS: Model slicing salary -> >50K scoring computed.
+												Accuracy: 0.6734277331292257
+												Precision: 1.0
+												Recall: 0.6734277331292257
+												FBeta: 0.8048483000457387

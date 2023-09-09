@@ -1,6 +1,12 @@
+import os,sys,inspect
+current_dir = os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))
+parent_dir = os.path.dirname(current_dir)
+sys.path.insert(0, parent_dir) 
+
 import logging
 import pandas as pd
-from load_config import config
+from utils.load_config import config
+
 
 def load_data(filename):
     """
@@ -67,6 +73,30 @@ def clean_data(filename):
     
     except Exception:
         logging.error("ERROR: Failed to clean data")
+
+def preprocess_df(df):
+    """
+    Preprocess the DataFrame by replacing missing values and reducing the number of categories.
+
+    Args:
+        df (DataFrame): The DataFrame to be preprocessed.
+
+    Returns:
+        DataFrame: The preprocessed DataFrame.
+    """
+    # Fill Missing Values
+    df['workclass'] = df['workclass'].replace("?", "Private")
+    df['occupation'] = df['occupation'].replace("?", "Prof-speciality")
+    df['native-country'] = df['native-country'].replace("?", "United-States")
+    
+    # Reducing Categories
+    df['workclass'] = df['workclass'].replace(config["WORKCLASS_MAPPING"])
+    df['education'] = df['education'].replace(config["EDUCATION_MAPPING"])
+    df['marital-status'] = df['marital-status'].replace(config["MARTIAL_MAPPING"])
+    df['relationship'] = df['relationship'].replace(config["RELATIONSHIP_MAPPING"])
+    df['race'] = df['race'].replace(config["RACE_MAPPING"])
+    
+    return df
 
 if __name__ == "__main__":
     df = clean_data(config['DATA_PATH'])

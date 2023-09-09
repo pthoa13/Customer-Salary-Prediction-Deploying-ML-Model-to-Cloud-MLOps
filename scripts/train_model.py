@@ -1,14 +1,21 @@
+import os,sys,inspect
+current_dir = os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))
+parent_dir = os.path.dirname(current_dir)
+sys.path.insert(0, parent_dir) 
+
 import logging
-from load_config import config
-from clean_data import clean_data
-from feature_engineering import process_data
-from sklearn.model_selection import train_test_split
-from model_function import (
+
+from utils.load_config import config
+from scripts.clean_data import clean_data
+from scripts.feature_engineering import process_data
+from scripts.model_function import (
             train_model, 
             compute_model_metrics,
             inference,
             save_model
 )
+from sklearn.model_selection import train_test_split
+
 
 # Set the logging level
 logging.basicConfig(

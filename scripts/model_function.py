@@ -1,6 +1,11 @@
+import os,sys,inspect
+current_dir = os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))
+parent_dir = os.path.dirname(current_dir)
+sys.path.insert(0, parent_dir) 
+
 import logging
 from joblib import dump
-from load_config import config
+from utils.load_config import config
 from sklearn.ensemble import GradientBoostingClassifier
 from sklearn.metrics import (
             fbeta_score, 
@@ -55,45 +60,45 @@ def compute_model_metrics(y, preds, data_slice=None, slicing=False ):
     fbeta : float
     """
     tabs_string = "\t".join(["" for i in range(13)])
-    try:
-        accuracy = accuracy_score(y, preds)
-        fbeta = fbeta_score(y, preds, beta=1, zero_division=1)
-        precision = precision_score(y, preds, zero_division=1)
-        recall = recall_score(y, preds, zero_division=1)
-        if not slicing:
-            logging.info(
-                "SUCCESS: Model scoring computed.\n"
-                "{tab}Accuracy: {accuracy}\n"
-                "{tab}Precision: {precision}\n"
-                "{tab}Recall: {recall}\n"
-                "{tab}FBeta: {fbeta}".format(
-                    tab=tabs_string,
-                    accuracy=accuracy, 
-                    precision=precision, 
-                    recall=recall, 
-                    fbeta=fbeta
-    )
+    # try:
+    accuracy = accuracy_score(y, preds)
+    fbeta = fbeta_score(y, preds, beta=1, zero_division=1)
+    precision = precision_score(y, preds, zero_division=1)
+    recall = recall_score(y, preds, zero_division=1)
+    if not slicing:
+        logging.info(
+            "SUCCESS: Model scoring computed.\n"
+            "{tab}Accuracy: {accuracy}\n"
+            "{tab}Precision: {precision}\n"
+            "{tab}Recall: {recall}\n"
+            "{tab}FBeta: {fbeta}".format(
+                tab=tabs_string,
+                accuracy=accuracy, 
+                precision=precision, 
+                recall=recall, 
+                fbeta=fbeta
 )
-        else:
-            logging.info(
-                "SUCCESS: Model slicing {} -> {} scoring computed.\n"
-                "{tab}Accuracy: {accuracy}\n"
-                "{tab}Precision: {precision}\n"
-                "{tab}Recall: {recall}\n"
-                "{tab}FBeta: {fbeta}".format(
-                    data_slice[0], 
-                    data_slice[1], 
-                    tab=tabs_string,
-                    accuracy=accuracy, 
-                    precision=precision, 
-                    recall=recall, 
-                    fbeta=fbeta
-                )
 )
-            
-        return accuracy, precision, recall, fbeta
-    except Exception:
-        logging.info("ERROR: Error when scoring model")
+    else:
+        logging.info(
+            "SUCCESS: Model slicing {} -> {} scoring computed.\n"
+            "{tab}Accuracy: {accuracy}\n"
+            "{tab}Precision: {precision}\n"
+            "{tab}Recall: {recall}\n"
+            "{tab}FBeta: {fbeta}".format(
+                data_slice[0], 
+                data_slice[1], 
+                tab=tabs_string,
+                accuracy=accuracy, 
+                precision=precision, 
+                recall=recall, 
+                fbeta=fbeta
+            )
+)
+        
+    return accuracy, precision, recall, fbeta
+    # except Exception:
+    #     logging.info("ERROR: Error when scoring model")
 
 
 def inference(model, X):

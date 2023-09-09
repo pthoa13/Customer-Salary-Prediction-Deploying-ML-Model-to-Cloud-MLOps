@@ -1,12 +1,18 @@
-import pickle
+import os,sys,inspect
+current_dir = os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))
+parent_dir = os.path.dirname(current_dir)
+sys.path.insert(0, parent_dir) 
+
+import joblib
 import pandas as pd
 import numpy as np
-from load_config import config
+from utils.load_config import config
+from collections import defaultdict
 from sklearn.preprocessing import LabelEncoder, StandardScaler
 
 def process_data(
     dataframe,
-    label=None,
+    label="salary",
     training=True,
 ):
     """ Process the data used in the machine learning pipeline.
@@ -31,56 +37,35 @@ def process_data(
     y : np.array
         Processed labels if labeled=True, otherwise empty np.array.
     """
-    
-    if label is not None:
-        x = dataframe.drop(label, axis=1)
-        y = dataframe[label]
-    else:
-        y = np.array([])
-     
-     
-    le_dict = {}   
+    cat_cols = config["CAT_FEATURES"]
     if training is True:
-        # Iterate over the columns of the dataframe
-        for column in x.columns:
-            # Initialize the Label Encoder
-            le = LabelEncoder()
-            
-            # Fit the label encoder object to the column
-            x[column] = le.fit_transform(x[column])
-            
-            # Add the label encoder object to the dictionary
-            le_dict[column] = le
+        le_dict = defaultdict(LabelEncoder) 
+        df_fit = dataframe.apply(lambda x: le_dict[x.name].fit_transform(x) 
+                                if x.name in cat_cols else x)
+        x = df_fit.drop(label, axis=1)
+        y = df_fit[label]
+        joblib.dump(le_dict, config["LE_PATH"])
         
-        # Transform the label object
-        le = LabelEncoder()
-        y = le.fit_transform(y)
-        le_dict["label"] = le
-        
-        # Save the dictionary to a file
-        with open(config["LE_PATH"], 'wb') as f:
-            pickle.dump(le_dict, f)
-    
+        # Normalize the Data 
+        scaler = StandardScaler()
+        x = pd.DataFrame(scaler.fit_transform(x), columns = x.columns)
+        joblib.dump(scaler, config["SCALER_PATH"], compress=True)
     else:
         # Load the le dictionary
-        with open(config["LE_PATH"], 'rb') as f:
-            le_dict = pickle.load(f)
+        le_dict = joblib.load(config["LE_PATH"])
         
-        for column in x.columns:
-            # Load the column's label encoder object
-            le = le_dict[column]
-            
-            # Fit and transform the column 
-            x[column] = le.transform(x[column])
+        #Load Scaler
+        scaler = joblib.load(config["SCALER_PATH"])
         
-        # Catch the exception when y in None when inference mode
-        try:
-            y = le_dict["label"].transform(y)
-        except Exception:
-            pass
-    # Normalize the Data 
-    scaler = StandardScaler()
-    x = pd.DataFrame(scaler.fit_transform(x), columns = x.columns)
+        df_fit = dataframe.apply(lambda x: le_dict[x.name].transform(x) 
+                                if x.name in cat_cols else x)
+        if label is not None:
+            x = df_fit.drop(label, axis=1)
+            y = df_fit[label]
+        else:
+            x = df_fit
+            y = np.array([])
+        x = pd.DataFrame(scaler.transform(x), columns = x.columns)
     
     return x, y
                        
