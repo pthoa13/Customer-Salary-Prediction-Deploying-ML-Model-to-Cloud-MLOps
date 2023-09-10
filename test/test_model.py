@@ -4,14 +4,12 @@ import pandas as pd
 import pandas.api.types as pdtypes
 import pytest
 try:
-    from scripts.clean_data import clean_data
     from scripts.feature_engineering import process_data
     from scripts.model_function import inference
     from scripts.train_model import split_data
     from utils.load_config import config
 except ModuleNotFoundError:
     sys.path.append('./')
-    from scripts.clean_data import clean_data
     from scripts.feature_engineering import process_data
     from scripts.model_function import inference
     from scripts.train_model import split_data
