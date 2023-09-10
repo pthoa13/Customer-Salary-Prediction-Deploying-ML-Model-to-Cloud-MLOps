@@ -39,6 +39,7 @@ projects
 ├── utils
 │   ├── constants.yaml
 │   └── load_config.py
+├── .env
 ├── .gitignore
 ├── docker-compose.yaml
 ├── Dockerfile
