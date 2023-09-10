@@ -26,7 +26,7 @@ def load_data(filename):
     except Exception:
         logging.error("ERROR: Failed to load data")
         
-def clean_data(filename):
+def clean_data(filename, save=False):
     """
     Clean the data by removing spaces, removing duplicates, 
     replacing missing values, and reducing categories.
@@ -64,7 +64,8 @@ def clean_data(filename):
         df['race'] = df['race'].replace(config["RACE_MAPPING"])
         
         # Save Clean Data
-        df.to_csv(config['CLEANED_DATA_PATH'], index=False)
+        if save:
+            df.to_csv(config['CLEANED_DATA_PATH'], index=False)
         
         # Logging
         logging.info("SUCCESS: Save Clean Data")

@@ -26,7 +26,7 @@ class Customer(BaseModel):
         'Assoc-acdm', '7th-8th', 'Doctorate', 'Assoc-voc', 'Prof-school',
         '5th-6th', '10th', 'Preschool', '12th', '1st-4th']
     education_num: int = 13
-    maritalStatus: Literal[
+    marital_status: Literal[
         'Never-married', 'Married-civ-spouse', 'Divorced',
         'Married-spouse-absent', 'Separated', 'Married-AF-spouse',
         'Widowed']
@@ -45,8 +45,8 @@ class Customer(BaseModel):
     sex: Literal['Male', 'Female']
     capital_gain: int = 1319
     capital_loss: int = 0
-    hoursPerWeek: int = 40
-    nativeCountry: Literal[
+    hours_per_week: int = 40
+    native_country: Literal[
         'United-States', 'Cuba', 'Jamaica', 'India', 'Mexico',
         'Puerto-Rico', 'Honduras', 'England', 'Canada', 'Germany', 'Iran',
         'Philippines', 'Poland', 'Columbia', 'Cambodia', 'Thailand',
@@ -76,15 +76,15 @@ async def predict_customer_salary(customer_data: Customer):
                     customer_data.fnlgt,
                     customer_data.education,
                     customer_data.education_num,
-                    customer_data.maritalStatus,
+                    customer_data.marital_status,
                     customer_data.occupation,
                     customer_data.relationship,
                     customer_data.race,
                     customer_data.sex,
                     customer_data.capital_gain,
                     customer_data.capital_loss,
-                    customer_data.hoursPerWeek,
-                    customer_data.nativeCountry
+                    customer_data.hours_per_week,
+                    customer_data.native_country
     ]])
     
     df_temp = pd.DataFrame(data=inp, 
