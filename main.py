@@ -3,7 +3,10 @@ import pandas as pd
 import numpy as np
 from fastapi import FastAPI
 from pydantic import BaseModel
-from typing import Literal
+try:
+    from typing import Literal
+except ImportError:
+    from typing_extensions import Literal
 
 from utils.load_config import config
 from scripts.clean_data import preprocess_df
